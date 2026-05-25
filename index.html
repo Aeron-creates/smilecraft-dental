@@ -1,0 +1,508 @@
+<!-- ========================= -->
+<!-- UPDATED index.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>SmileCraft Dental</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#f8fbff] text-gray-800 overflow-x-hidden">
+
+  <!-- Blur Background -->
+  <div class="blur-circle blue"></div>
+  <div class="blur-circle cyan"></div>
+
+  <!-- NAVBAR -->
+  <nav class="w-full fixed top-0 left-0 z-50 backdrop-blur-md bg-white/40 border-b border-white/20">
+
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+      <div class="text-2xl font-black text-blue-600">
+        SmileCraft
+      </div>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#services" class="hover:text-blue-600 transition">Services</a>
+        <a href="#automation" class="hover:text-blue-600 transition">AI Support</a>
+        <a href="#testimonials" class="hover:text-blue-600 transition">Testimonials</a>
+        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      </div>
+
+      <a href="#contact" class="nav-btn">
+        Book Now
+      </a>
+
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center relative hero-section">
+
+    <div class="max-w-7xl mx-auto px-6 pt-36 pb-24 grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- LEFT -->
+      <div>
+
+        <div class="badge">
+          ✨ AI Powered Patient Support
+        </div>
+
+        <h1 class="hero-title">
+          Modern Dental Care
+          <span class="gradient-text">
+            With AI Assistance
+          </span>
+        </h1>
+
+        <p class="hero-text">
+          Experience smarter appointment booking, intelligent patient support,
+          and premium dental care powered by modern automation.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-10">
+
+          <a href="#contact" class="primary-btn">
+            Book Appointment
+          </a>
+
+          <button class="secondary-btn" id="openChat">
+            Chat With AI
+          </button>
+
+        </div>
+
+        <!-- STATS -->
+        <div class="grid grid-cols-3 gap-5 mt-14">
+
+          <div class="stat-card">
+            <h3>5000+</h3>
+            <p>Patients</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>4.9★</h3>
+            <p>Reviews</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>24/7</h3>
+            <p>AI Support</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="relative flex flex-col items-center">
+
+        <div class="image-wrapper">
+
+          <img
+            src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg"
+            alt="Dental Clinic"
+            class="main-image"
+          />
+
+        </div>
+
+        <!-- FLOATING AI CARD -->
+        <div class="chat-card">
+
+          <div class="chat-header">
+            AI Assistant
+            <span class="online-dot"></span>
+          </div>
+
+          <div class="chat-message user">
+            Do you offer teeth whitening?
+          </div>
+
+          <div class="chat-message bot">
+            Yes! Professional whitening starts at $199.
+            Would you like to book a consultation?
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PREMIUM IMAGE CAROUSEL -->
+
+  <section class="py-20 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+
+        <h2 class="section-title">
+          Modern Dental Experience
+        </h2>
+
+        <p class="section-text">
+          Advanced equipment, premium care, and comfortable patient experience.
+        </p>
+
+      </div>
+
+      <div class="carousel-container">
+
+        <div class="carousel-track" id="carouselTrack">
+
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg">
+          </div>
+
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/3845757/pexels-photo-3845757.jpeg">
+          </div>
+
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/3845806/pexels-photo-3845806.jpeg">
+          </div>
+
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/6528908/pexels-photo-6528908.jpeg">
+          </div>
+
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/4269695/pexels-photo-4269695.jpeg">
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+
+        <button class="carousel-btn prev" id="prevBtn">
+          ❮
+        </button>
+
+        <button class="carousel-btn next" id="nextBtn">
+          ❯
+        </button>
+
+        <!-- DOTS -->
+
+        <div class="carousel-dots">
+
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <h2 class="section-title">
+          Our Dental Services
+        </h2>
+
+        <p class="section-text">
+          Advanced dental care with modern technology and patient comfort.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="service-card">
+          <h3>Teeth Whitening</h3>
+          <p>Professional whitening treatments for a brighter smile.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Dental Implants</h3>
+          <p>Permanent and natural looking tooth replacement solutions.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Root Canal</h3>
+          <p>Painless root canal procedures using advanced equipment.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Braces & Aligners</h3>
+          <p>Modern orthodontic solutions for perfectly aligned teeth.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Cosmetic Dentistry</h3>
+          <p>Enhance your smile with veneers and cosmetic treatments.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Emergency Care</h3>
+          <p>24/7 urgent dental support and emergency appointments.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- AI AUTOMATION -->
+  <section id="automation" class="py-24">
+
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+
+      <div>
+
+        <div class="badge">
+          🤖 Smart Clinic Automation
+        </div>
+
+        <h2 class="section-title mt-6">
+          Never Miss A Patient Inquiry Again
+        </h2>
+
+        <p class="section-text mt-6">
+          Our AI assistant instantly answers patient questions,
+          books appointments, and captures leads automatically.
+        </p>
+
+        <div class="space-y-5 mt-10">
+
+          <div class="feature-box">
+            24/7 Automated Patient Replies
+          </div>
+
+          <div class="feature-box">
+            Instant Appointment Booking
+          </div>
+
+          <div class="feature-box">
+            Lead Collection & Notifications
+          </div>
+
+          <div class="feature-box">
+            Insurance & FAQ Assistance
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="automation-card">
+
+        <div class="automation-chat user">
+          Do you accept insurance?
+        </div>
+
+        <div class="automation-chat bot">
+          Yes! We work with most major insurance providers.
+        </div>
+
+        <div class="automation-chat user">
+          Can I book for tomorrow?
+        </div>
+
+        <div class="automation-chat bot">
+          Absolutely. We have slots available at 11:00 AM and 2:30 PM.
+        </div>
+
+        <div class="automation-success">
+          ✔ Lead Automatically Saved To CRM
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <h2 class="section-title">
+          What Patients Say
+        </h2>
+
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+
+        <div class="testimonial-card">
+          <p>
+            “The AI assistant made booking super easy and the staff was amazing.”
+          </p>
+
+          <h4>Sarah Mitchell</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            “One of the most modern dental clinics I’ve ever visited.”
+          </p>
+
+          <h4>Daniel Carter</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            “Quick responses, professional service, and excellent treatment.”
+          </p>
+
+          <h4>Emily Watson</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24">
+
+    <div class="max-w-4xl mx-auto px-6">
+
+      <div class="contact-box">
+
+        <div class="text-center mb-10">
+
+          <h2 class="section-title">
+            Schedule Your Consultation
+          </h2>
+
+        </div>
+
+        <form id="consultationForm" class="grid md:grid-cols-2 gap-6">
+
+          <input type="text" id="name" placeholder="Full Name" class="input-field" required>
+
+          <input type="email" id="email" placeholder="Email Address" class="input-field" required>
+
+          <input type="tel" id="phone" placeholder="Phone Number" class="input-field" pattern="[0-9]{10}" required>
+
+          <select id="service" class="input-field" required>
+            <option value="">Select Service</option>
+            <option>Teeth Whitening</option>
+            <option>Dental Implants</option>
+            <option>Root Canal</option>
+            <option>Braces & Aligners</option>
+            <option>Emergency Care</option>
+          </select>
+
+          <textarea
+            id="message"
+            placeholder="Tell us about your dental concern..."
+            class="input-field md:col-span-2 h-40 resize-none"
+            required
+          ></textarea>
+
+          <button type="submit" class="primary-btn md:col-span-2">
+            Schedule Consultation
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t border-gray-200">
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-5 justify-between items-center">
+
+      <div>
+
+        <h3 class="text-2xl font-black text-blue-600">
+          SmileCraft Dental
+        </h3>
+
+        <p class="text-gray-500 mt-2">
+          Intelligent patient care powered by AI automation.
+        </p>
+
+      </div>
+
+      <div class="text-sm text-gray-500">
+        © 2026 SmileCraft Dental. All rights reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- AI CHAT WINDOW -->
+
+  <div id="chatWindow" class="chat-window hidden">
+
+    <div class="chat-top">
+
+      <h3>SmileCraft AI Assistant</h3>
+
+      <button id="closeChat">
+        ✕
+      </button>
+
+    </div>
+
+    <div id="chatMessages" class="chat-messages">
+
+      <div class="ai-msg">
+        Hi! How can I help you today?
+      </div>
+
+    </div>
+
+    <div class="chat-input-box">
+
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Ask something..."
+      >
+
+      <button id="sendBtn">
+        Send
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
