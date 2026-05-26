@@ -91,36 +91,6 @@ function getAIResponse(input) {
   return "Our team will be happy to assist you with that.";
 }
 
-// FORM VALIDATION
-
-const form = document.getElementById("consultationForm");
-
-form.addEventListener("submit", function(e) {
-  
-  
-  
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  
-  if (name.length < 3) {
-    
-    alert("Please enter a valid full name.");
-    
-    return;
-  }
-  
-  if (phone.length !== 10) {
-    
-    alert("Phone number must be exactly 10 digits.");
-    
-    return;
-  }
-  
-  alert("Consultation request submitted successfully!");
-  
-  form.reset();
-  
-});
 
 // =========================
 // PREMIUM CAROUSEL
