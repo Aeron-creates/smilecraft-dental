@@ -403,15 +403,20 @@
 
         </div>
 
-        <form id="consultationForm" class="grid md:grid-cols-2 gap-6">
+        <form
+  id="consultationForm"
+  action="YOUR_FORMSPREE_LINK"
+  method="POST"
+  class="grid md:grid-cols-2 gap-6"
+>
 
-          <input type="text" id="name" placeholder="Full Name" class="input-field" required>
+          <input type="text" id="name" name="name" placeholder="Full Name" class="input-field" required>
 
-          <input type="email" id="email" placeholder="Email Address" class="input-field" required>
+          <input type="email" id="email" name="email" placeholder="Email Address" class="input-field" required>
 
-          <input type="tel" id="phone" placeholder="Phone Number" class="input-field" pattern="[0-9]{10}" required>
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="input-field" pattern="[0-9]{10}" required>
 
-          <select id="service" class="input-field" required>
+          <select id="service" name="service" class="input-field" required>
             <option value="">Select Service</option>
             <option>Teeth Whitening</option>
             <option>Dental Implants</option>
@@ -422,6 +427,7 @@
 
           <textarea
             id="message"
+            name="message"
             placeholder="Tell us about your dental concern..."
             class="input-field md:col-span-2 h-40 resize-none"
             required
