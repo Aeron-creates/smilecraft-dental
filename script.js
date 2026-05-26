@@ -232,3 +232,50 @@ track.addEventListener("touchend", e => {
   restartAutoSlide();
   
 });
+
+const form = document.getElementById("consultationForm");
+const successMessage = document.getElementById("successMessage");
+
+form.addEventListener("submit", async function(e) {
+
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  try {
+
+    const response = await fetch(form.action, {
+
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+
+    });
+
+    if (response.ok) {
+
+      successMessage.classList.remove("hidden");
+
+      form.reset();
+
+      setTimeout(() => {
+
+        successMessage.classList.add("hidden");
+
+      }, 4000);
+
+    } else {
+
+      alert("Something went wrong. Please try again.");
+
+    }
+
+  } catch(error) {
+
+    alert("Network error. Please try again.");
+
+  }
+
+});
