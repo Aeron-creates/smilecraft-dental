@@ -80,8 +80,8 @@
             Book Appointment
           </a>
 
-          <button class="secondary-btn" id="openChat">
-            Chat With AI
+          <button class="secondary-btn" onclick="window.chatbase && window.chatbase('open')">
+  Chat With AI
           </button>
 
         </div>
@@ -472,44 +472,6 @@
     </div>
 
   </footer>
-
-  <!-- AI CHAT WINDOW -->
-
-  <div id="chatWindow" class="chat-window hidden">
-
-    <div class="chat-top">
-
-      <h3>SmileCraft AI Assistant</h3>
-
-      <button id="closeChat">
-        ✕
-      </button>
-
-    </div>
-
-    <div id="chatMessages" class="chat-messages">
-
-      <div class="ai-msg">
-        Hi! How can I help you today?
-      </div>
-
-    </div>
-
-    <div class="chat-input-box">
-
-      <input
-        type="text"
-        id="userInput"
-        placeholder="Ask something..."
-      >
-
-      <button id="sendBtn">
-        Send
-      </button>
-
-    </div>
-
-  </div>
 
   <script src="script.js"></script>
 
